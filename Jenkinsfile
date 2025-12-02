@@ -4,13 +4,13 @@ pipeline {
         stage('version') {
             steps {
                 // Corrected: Using 'bat' for Windows command execution
-                bat 'python --version' 
+                bat 'C:\Users\VNRM37\AppData\Local\Programs\Python\Python310\python.exe --version' 
             }
         }
         stage('hello') {
             steps {
                 // Corrected: Using 'bat' for Windows command execution
-                bat 'python wrapper.py' 
+                bat 'C:\Users\VNRM37\AppData\Local\Programs\Python\Python310\python.exe wrapper.py' 
             }
         }
     }
